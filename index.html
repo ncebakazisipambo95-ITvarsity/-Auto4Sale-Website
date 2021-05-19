@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+	<title>Auto4Sale| Home</title>
+        <link rel="stylesheet" href="style.css"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <style>
+            .mySlides {display:none;}
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+            </ul>
+            <ul>
+                <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        </div>
+        
+        <div id="header">
+            <h1>Auto4Sale</h1>
+            <p>
+                Auto4Sale has a wide range of Cars for Sale in South Africa from Hot BMW's & Range Rovers & Porsche. We all know that the world is revolving  and people are adapting to change because believe it or not change is good. auto4sale brings you the best vehicles world wide. so far people are going crazy over  the evolving technology which keeps upgrading  our range of cars.for more information please search for sale in Kwazulu natal, Gauteng Western Cape and other South African Provinces. try searching for latest Bmw's,Range rovers,mercedes Benz and Mazda.
+            </p>
+        </div>
+        <div id="slide">
+            <h2 class="w3-center">FEATURED CARS </h2>
+            <div class="w3-content w3-display-container">
+              <a href="benz.html" ><img class="mySlides" src="images/benz1.jpg" style="width:100%"></a>
+              <a href="mazda.html" ><img class="mySlides" src="images/mazda2.jpg" style="width:100%"></a>
+              <a href="range.html" ><img class="mySlides" src="images/images.jpg" style="width:100%"></a>
+              <a href="bmw.html" ><img class="mySlides" src="images/bmw-m8competition-coupe-inspire-sp-desktop_v2.jpg" style="width:100%"></a>
+              <a href="porsche.html" ><img class="mySlides" src="images/p1.jpg" style="width:100%"></a>
+
+              <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+              <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+            </div>
+        </div>
+        
+        <div id="page">
+		</div>
+		
+		
+		<div id="footer">
+		
+                <div id="box-1">
+                    <h2>CARS Links</h2>
+                    <ul class="styled">
+                        <li><a href="benz.html" >BENZ</a></li>
+                        <li><a href="mazda.html" >MAZDA</a></li>
+                        <li><a href="range.html" >RANGE</a></li>
+                    </ul>  
+                </div>
+                
+                <div id="box-2">
+                    <h2>CARS Links</h2>
+                    <ul class="styled">
+                        <li><a href="bmw.html" >BMW</a></li>
+                        <li><a href="porsche.html" >PORSCHE</a></li>
+                    </ul>
+                </div>
+                
+                <div id="box-3">
+                    <h2>Follow Us</h2>
+                    <p>Connect with us to stay informed....</p>
+                    
+                    <a href="#" ><img src="images/facebook.png" height="30px" ></a>
+                    <a href="#" ><img src="images/instagram.png" height="30px" ></a>
+                    <a href="#" ><img src="images/twitter.png" height="30px" ></a>
+                    <a href="#" ><img src="images/pinterest.png" height="30px"></a>
+                </div>
+            </div>
+			
+        <div id="copyright">
+                <p>&copy; All Rights Reserved | Designed by NCESH :)</p>
+        </div>
+        
+<!--====================================================================== JAVASCRIPT =================================================================-->
+                <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function showDivs(n) {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  x[slideIndex-1].style.display = "block";  
+}
+</script>
+<!--====================================================================== JAVASCRIPT =================================================================-->
+	
+    </body>
+
+</html>
+
+<head>
